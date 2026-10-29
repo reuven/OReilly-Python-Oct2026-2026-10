@@ -1,3 +1,9 @@
+# if another program says "import menu"
+# then it starts to read and execute this file... line 4, it defines "menu"... line 13, the "if" is False, so its body doesn't run
+
+# if we run this program from the command line
+# then it starts to read and execute the file... when it reaches line 16, the "if" is True, so we invoke `menu` and get a reuslt, which we print
+
 def menu(choices):
     while True:
         user_choice = input(f'Enter choice from {choices}: ').strip()
